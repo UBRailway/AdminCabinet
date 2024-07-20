@@ -1,0 +1,172 @@
+html,
+body {
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+}
+
+/* header*/ 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: #15206F;
+}
+
+.header-container {
+  display: flex;
+  /*justify-content: center;*/
+  font-family: Monsr-medium, sans-serif;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.reports {
+  padding-right: 40px;
+  text-decoration: none;
+  color: #FFFF;
+  font-size: 20px;
+}
+
+.maps {
+  padding-right: 40px;
+  text-decoration: none;
+  color: #FFFF;
+  font-size: 20px;
+}
+
+.communication {
+  padding-right: 40px;
+  text-decoration: none;
+  color: #FFFF;
+  font-size: 20px;
+}
+
+.reference {
+  text-decoration: none;
+  color: #FFFF;
+  font-size: 20px;
+  /*padding-right: 196px;*/
+}
+
+
+.personal-acc {
+  display: flex;
+  align-items: center;
+
+}
+
+.acc {
+  color: #FFFF;
+  font-size: 15px;
+  font-family: Monsr-medium, sans-serif;
+  text-decoration: none;
+  margin-right: 27px;
+}
+
+
+/* Intro */
+.intro{
+  width: 100%;
+  height: 85vh;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+/* ЗАГОЛОВОК */
+.container__intro__title{
+  text-align:center;
+  
+  }
+/* main content */
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.data{
+  width: 26%;
+  position: relative;
+  padding-left: 10px;
+
+}
+
+.data::after{
+content: "";
+display: block;
+width: 1px;
+height: 100%;
+position: absolute;
+background-color: black;
+top:0;
+left:90%;
+
+}
+.data1{
+  width: 37%;
+  justify-content: right;
+}
+
+.data2{
+  width: 30%;
+}
+
+.data_intro_wrapper{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.circle-image img{
+  width:100%;
+  height:100px;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* BUTTONS */
+.intro__buttons{
+  display:flex;
+  justify-content: right;
+}
+.usr_manage{
+  margin-right: 50px;
+  display: inline-block;
+  padding: 20px;
+  color:white;
+  background-color: #15206F;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.intro__change{
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  color:white;
+  background-color: #15206F;
+  border-radius: 15px;
+  text-decoration: none;
+  height: 50%;
+}
+.link_usr_manage{
+  text-decoration: none;
+}
+.link_change{
+  text-decoration: none;
+}
