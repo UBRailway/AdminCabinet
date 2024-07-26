@@ -13,7 +13,7 @@
             ],
             "django": true,
             "autoStartBrowser": true,
-            "program": "${workspaceFolder}\\AdmCab\\manage.py"
+            "program": "${workspaceFolder}\\ubzd\\manage.py"
         }
     ]
 }

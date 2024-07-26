@@ -1,10 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kabinetAdm</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 
@@ -30,8 +32,8 @@
         </div>
 
         <div class="personal-acc">
-            <a class="acc" href="#">Знайдюк А.Н.</a>
-            <img src="img/enter.svg" alt="">
+            <a class="acc" href="#">{{name_lil}}</a>
+            <img src="{% static "img/enter.svg" %}" alt="">
         </div>
     </div>
 </header>
@@ -40,37 +42,38 @@
 <body>
     <div class="intro">
         <div class="container__intro__title">
-            <h1 class="text"> Личный кабинет администратора</h1>
+            <h1 class="text">Personal account</h1>
         </div>
         <div class="container">    
             <span class="circle-image">
-                <img src="img/photo_2024-05-29_16-14-18.jpg" alt="Фото сотрудника">
+                <img src="{% static "img/photo_2024-05-29_16-14-18.jpg" %}" alt="Фото сотрудника">
             </span>
 
             <div class="data">
-                <p> Имя: {{name}}</p>
+                <p> First name: {{name}} <br/>
+                    Second name: {{second_name}}</p>
             </div>
 
             <div class="data1">
-                <p>Должность: {{job}} <br/>
-                   Участок: {{area}} <br/>
-                   Станция: {{station}}</p>
+                <p>Position: {{job}} <br/>
+                   Work area: {{area}} <br/>
+                   Station: {{station}}</p>
             </div>
         </div>
         <div class="data_intro_wrapper">
             <div class="data2">
-                <p>Телефон: {{phone_number}}<br/>
-                E-mail: {{mail}} </p>
+                <p>Phone number: {{phone_number}}<br/>
+                    E-mail: {{mail}} </p>
             </div>
         </div>
         
     </div>  
     <div class="intro__buttons">
         <div class="usr_manage"> 
-            <a class="link_urs_manage" href="">Управление <br/> пользователями</a>
+            <a class="link_urs_manage">Управление <br/> пользователями</a>
         </div>
         <div class="intro__change"> 
-            <a href="link_change">Изменить</a>
+            <a class="change">Изменить</a>
         </div>
     </div>
 

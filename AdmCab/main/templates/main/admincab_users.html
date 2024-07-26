@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users_manage</title>
+    <link rel="stylesheet" href="{% static "css/users.css"%}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<header class="header">
+    <div class="header-container">
+        <div>
+
+        </div>
+
+        <div class="menu">
+            <div>
+                <a class="reports" href="#">Отчеты</a>
+            </div>
+            <div>
+                <a class="maps" href="#">Карты</a>
+            </div>
+            <div>
+                <a class="communication" href="#">Коммуникация</a>
+            </div>
+            <div>
+                <a class="reference" href="#">Справка</a>
+            </div>
+        </div>
+
+        <div class="personal-acc">
+            <a class="acc" href="#">{{name_lil}}</a>
+            <img src="{% static "img/enter.svg" %}" alt="">
+        </div>
+    </div>
+</header>
+<main>
+    <div class='sort_container'>
+        <div class="search-form">
+            <input type="text" class="search_form__txt" type='text'>
+            <button class="serch-form__btn"><img class="search-form__image" src="img/search.svg"></button>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</main>

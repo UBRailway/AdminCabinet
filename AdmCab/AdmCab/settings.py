@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ubzd.urls'
+ROOT_URLCONF = 'AdmCab.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ubzd.wsgi.application'
+WSGI_APPLICATION = 'AdmCab.wsgi.application'
 
 
 # Database

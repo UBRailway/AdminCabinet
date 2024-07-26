@@ -83,7 +83,7 @@ body {
 /* Intro */
 .intro{
   width: 100%;
-  height: 85vh;
+  height: 86vh;
   padding: 0;
   display:flex;
   flex-direction:column;
@@ -97,14 +97,18 @@ body {
 /* main content */
 .container{
   display: flex;
-  justify-content: center;
+ justify-content: center;
 }
 
 .data{
   width: 26%;
   position: relative;
   padding-left: 10px;
+  padding-right: 10px;
 
+}
+data.p{
+  padding-right: 10px;
 }
 
 .data::after{
@@ -121,6 +125,7 @@ left:90%;
 .data1{
   width: 37%;
   justify-content: right;
+  padding-left: 2%;
 }
 
 .data2{
@@ -134,9 +139,9 @@ justify-content: center;
 }
 
 .circle-image img{
-  width:100%;
-  height:100px;
-  display: block;
+  width:80%;
+  height: 150px;
+  display: inline-block;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -144,12 +149,12 @@ justify-content: center;
 .intro__buttons{
   display:flex;
   justify-content: right;
+  color: #FFFF;
 }
 .usr_manage{
   margin-right: 50px;
   display: inline-block;
   padding: 20px;
-  color:white;
   background-color: #15206F;
   border-radius: 15px;
   text-decoration: none;
@@ -158,7 +163,6 @@ justify-content: center;
   display: inline-block;
   text-align: center;
   padding: 15px;
-  color:white;
   background-color: #15206F;
   border-radius: 15px;
   text-decoration: none;
